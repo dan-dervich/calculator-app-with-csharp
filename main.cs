@@ -6,7 +6,7 @@ public class Calculator
     public static void Main(string[] args)
     {
         Console.WriteLine("tipos de operaciones que se aceptan: *, /, %, + y -");
-        Console.WriteLine("porfavor ingrese su  operacion matematica.");
+        Console.WriteLine("porfavor ingrese su  operacion matematica. \n");
         string operation = Console.ReadLine();
         for (int i = 0; i < operation.Count(); i++)
         {
@@ -19,23 +19,23 @@ public class Calculator
             }
             if (operation[i] == '*')
             {
-                Console.WriteLine(Convert.ToInt32(createFirstNum) * Convert.ToInt32(createSecondNum));
+                Console.WriteLine(operation + "=" + (Convert.ToInt32(createFirstNum) * Convert.ToInt32(createSecondNum)));
             }
             else if (operation[i] == '/')
             {
-                Console.WriteLine(Convert.ToInt32(createFirstNum) / Convert.ToInt32(createSecondNum));
+                Console.WriteLine(operation + "=" + (Convert.ToInt32(createFirstNum) / Convert.ToInt32(createSecondNum)));
             }
             else if (operation[i] == '%')
             {
-                Console.WriteLine(Convert.ToInt32(createFirstNum) % Convert.ToInt32(createSecondNum));
+                Console.WriteLine(operation + "=" + (Convert.ToInt32(createFirstNum) % Convert.ToInt32(createSecondNum)));
             }
             else if (operation[i] == '+')
             {
-                Console.WriteLine(Convert.ToInt32(createFirstNum) + Convert.ToInt32(createSecondNum));
+                Console.WriteLine(operation + "=" + (Convert.ToInt32(createFirstNum) + Convert.ToInt32(createSecondNum)));
             }
             else if (operation[i] == '-')
             {
-                Console.WriteLine(Convert.ToInt32(createFirstNum) - Convert.ToInt32(createSecondNum));
+                Console.WriteLine(operation + "=" + (Convert.ToInt32(createFirstNum) - Convert.ToInt32(createSecondNum)));
             }
         }
     }
